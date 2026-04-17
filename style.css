@@ -5,49 +5,62 @@
 body{
     margin:0;
     font-family: arial, Helvetica, sans-serif;
-    background-color: #f4f4f4; /*cor em hexadecimal*/
+    background-color: #104b8f; /*cor em hexadecimal*/
+    padding: 30px; /*alterei o padding 16/04*/
 }
 header{
-    background-color: #c0c0c0;/*cinza cocô kkkk*/
-    color: #ffff;/*branco em hexadecimal*/
-    text-align: center;/*centraliza o texto*/
+    background-color: cadetblue;/*cinza cocô kkkk*/
+    color: #ffffff; /*branco em hexadecimal*/
+    text-align: center; /*centraliza o texto*/
 }
-nav a{ /*nav navigation a a,de link, vou trabalhar só no link*/
-    color: blue;
-    text-decoration: none;/*tirei toda a decoração do texto*/
-    padding: 4px;
+nav a{ /*nav navigation a, de link, vou trabalhar só no link*/
+    color: rgb(0, 217, 255); /*alterei a cor 16/04*/
+    text-decoration: none; /*tirei toda a decoração do texto*/
+    padding: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; /*radius é a borda arredondada*/
+    background-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
 }
 .bloco{ /*declaração de class, a class procede de "." */
-    background-color: #cccc;
+    background-color: #4337e7cc;
     color: black;
-    border: 1px dotted #a3a3; /*borda geral tracejada*/
-    border-radius: 6px;
-    padding: 16px;
-    margin-bottom: 16px;
-    border-top: 2px solid #d8d; /*borda superior solida*/
+    border: 1px dotted rgba(255, 0, 0, 0.2); /*borda geral tracejada*/
+    border-radius: 1px;
+    padding: 30px;
+    margin-bottom: 36px;
+    border-top: 10px solid rgb(0, 0, 0); /*borda superior solida*/
 }
 #galeria{ /* # significa id, onde coloca-se por ex.:id="galeria" 
     só pode ter 1 com o msesmo nome por página*/
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;/*espaço entre elementos dentro do id*/
-    justify-content: flex-start;/*reforçando que ele vai estar "flexivel"*/
-padding: 20px;
-
+    display:flex;
+    gap: 74px; /*espaço entre elementos dentro do id*/
+    justify-content: center; /*reforçando que ele vai estar "flexivel"*/
+     padding: 20px;
 }
 .foto{
     background: #ffffff;
-    padding: 12px 12px 20px 12px;/*lat dir, esq, baixo e topo*/
+    padding: 12px 12px 20px 12px; /*lat dir, esq, baixo e topo*/
     border: 1px solid #dddddd;
-    box-shadow: 0 4px 10px #000000;
-    width: 220px;/*largura*/
-    text-align: center;/*alinhamento ao centro*/
+    box-shadow: 0 4px 10px #27ace9;
+    width: 220px; /*largura*/
+    text-align: center; /*alinhamento ao centro*/
     border-radius: 4px;
 }
 
 .foto img{
-width: 100%;
-height: 220px;
-object-fit: cover;/*efeito de sobrepor*/
-display: block;
+   width: 100%;
+   height: 220px;
+   object-fit: cover; /*efeito de sobrepor*/
+   display: block;
+}
+.foto:hover:first-child{
+    transform: scale(1.50) rotate(-5deg);
+}
+
+.legenda{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 29px;
+    font-style: italic;
 }
